@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const controllers_1 = require("../controllers");
+const router = (0, express_1.Router)();
+router.get("/", (_, res) => res.redirect("/"));
+router.get("/home", controllers_1.getHomePageInfo);
+router.get("/info", controllers_1.getAnimeAboutInfo);
+router.get("/genre/:name", controllers_1.getGenreAnime);
+router.get("/search", controllers_1.getAnimeSearch);
+router.get("/search/suggest", controllers_1.getAnimeSearchSuggestion);
+router.get("/episodes/:animeId", controllers_1.getAnimeEpisodes);
+router.get("/servers", controllers_1.getEpisodeServers);
+router.get("/episode-srcs", controllers_1.getAnimeEpisodeSources);
+router.get("/producer/:name", controllers_1.getProducerAnimes);
+router.get("/:category", controllers_1.getAnimeCategory);
+exports.default = router;
