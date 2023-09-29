@@ -34,5 +34,5 @@ app.listen(PORT, () => {
 // don't sleep
 setInterval(() => {
   console.log("HEALTHCHECK ;)", new Date().toLocaleString());
-  http.get("http://zoroapi.vercel.app/health");
+  http.get("http://zoroapi-pink.vercel.app/health");
 }, 540000);

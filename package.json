@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json",
+	"now-build": "tsc -p tsconfig.json",
     "prepare": "husky install",
     "test": "jest",
     "healthcheck": "curl -f http://localhost:4000/health"
