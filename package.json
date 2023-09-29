@@ -2,9 +2,9 @@
   "name": "aniwatch-api",
   "version": "1.17.1",
   "description": "Node Express API for obtaining anime information from aniwatch",
-  "main": "src/server.ts",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "start": "node dist/server.js",
 	"build": "tsc -p tsconfig.json",
     "dev": "nodemon src/server.ts",
     "prepare": "husky install",
