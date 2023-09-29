@@ -2,9 +2,9 @@
   "compilerOptions": {
     "target": "ES2021",
     "module": "CommonJS",
-    "rootDir": "./src",
+    
     "moduleResolution": "Node",
-    "outDir": "./dist",
+    "outDir": "dist",
     "declaration": true,
     "removeComments": true,
     "esModuleInterop": true,
@@ -14,7 +14,7 @@
     "skipLibCheck": true
   },
   "include": [
-    "./src"
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules"
